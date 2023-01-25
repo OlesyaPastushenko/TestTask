@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.homeH1 {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #363636;
+margin-top: 50px;
+}
+.resContainer {
+    display: flex;
+    max-width: 1350px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}

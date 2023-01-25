@@ -1,0 +1,60 @@
+
+.cardItemMain {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.cardItemImg {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+.cardItemContainer {
+display: flex;
+flex-direction: column;
+align-items: center;  
+position: absolute;
+top: 100px;
+bottom: 100px;
+max-width: 1290px;
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+border-radius: 5px;
+padding: 75px;
+margin-left: 25px;
+margin-right: 25px;
+}
+.cardItemTitle {
+width: 473px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+color: #363636;
+}
+.cardItemSum {
+margin-top: 50px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #000000;
+}
+.cardItemBackBtn {
+    position: absolute;
+    bottom: -85px;
+    left: 75px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+color: #363636;
+
+}
