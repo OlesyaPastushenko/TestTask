@@ -45,7 +45,7 @@ export function Home(){
                 <div className='homeH1'>Filter by keywords</div>
                 <Input onSearch={onSearch}/>
                 <div className='homeH1'>
-                    Results: {filterRes.length==0 && articles.length}
+                    Results: {filterRes.length==0 ? articles.length : filterRes.length}
                 </div>
                 <div className='resContainer'>
                 {loading && <p>Loading...</p>}
