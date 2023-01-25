@@ -17,7 +17,8 @@ export function Home(){
     const [filterRes, setFilterRes] = useState<ICard[]>([])
     
    
-    const onSearch = () => {
+    const onSearch = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
         setFilterRes([])
         let sortedFilter = articles.filter(el =>
         el.title.toLowerCase().includes(value.toLowerCase()) 

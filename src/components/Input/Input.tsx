@@ -1,9 +1,9 @@
 import "./style.scss"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { InputContext } from "../../context/InputContext"
 
 interface InputProps {
-   onSearch: ()=> void
+   onSearch: (event: React.FormEvent<HTMLFormElement>)=> void
 }
 
 
@@ -14,8 +14,10 @@ return(
     
     <div className="inputMain">
     <div className="inputContainer">
-    <button className="inputSearchBtn" onClick={onSearch}></button>
+    <button className="inputSearchBtn" ></button>
+    <form className="inputForm" onSubmit={onSearch}>
     <input className="inputInput" type="text" value={value} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>{setValue(e.target.value)}}/>
+    </form>
     </div>
     </div>
 )
