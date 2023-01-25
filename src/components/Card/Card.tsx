@@ -13,12 +13,8 @@ interface CardProps {
 
 export function Card({card}: CardProps){
     const {value}= useContext(InputContext)
-    const [title, setTitle] = useState("")
-    const [summary, setSummary] = useState(card.summary.slice(0,60).trim()+"...")
-    /* 
-    let cardTitle = card.title 
-    let newCardTitle = cardTitle.replace(regex,function(match){return `<span>${match}</span>`})
-    */
+    const [summary, setSummary] = useState(card.summary.slice(0,72).trim()+"...")
+
     let regex = new RegExp(`(${value})`, "gi")
     return (
         <Link className="cardLink" to={`/${card.id}`}>
@@ -29,7 +25,7 @@ export function Card({card}: CardProps){
         <div className="cardPublishedAt">{card.publishedAt}</div>
         </div>  
         <div className="cardTitle">
-        {reactStringReplace(card.title.slice(0,72), regex , (value) => (
+        {reactStringReplace(card.title, regex , (value) => (
           <span style={{ backgroundColor: 'yellow' }}>{value}</span>
         ))} 
         </div> 
