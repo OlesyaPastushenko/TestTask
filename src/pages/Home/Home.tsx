@@ -15,7 +15,6 @@ export function Home(){
     const {articles, loading, error} = useArticles()
     const {value} = useContext(InputContext)
     const [filterRes, setFilterRes] = useState<ICard[]>([])
-    
    
     const onSearch = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();

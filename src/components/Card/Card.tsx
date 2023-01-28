@@ -25,8 +25,8 @@ export function Card({card}: CardProps){
         <div className="cardPublishedAt">{card.publishedAt}</div>
         </div>  
         <div className="cardTitle">
-        {reactStringReplace(card.title, regex , (value) => (
-          <span style={{ backgroundColor: 'yellow' }}>{value}</span>
+        {reactStringReplace(card.title, regex , (value, i) => (
+          <span key={i} style={{ backgroundColor: 'yellow' }}>{value}</span>
         ))} 
         </div> 
         <div className="cardSummary">

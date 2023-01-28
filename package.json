@@ -11,7 +11,10 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "axios": "^1.2.3",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.3",
+    "dotenv": "^16.0.3",
+    "env": "^0.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
@@ -24,8 +27,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start cross-env NODE_VERSION=8.19.2 node scripts",
+    "build": "react-scripts build cross-env NODE_VERSION=8.19.2 node scripts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
