@@ -29,7 +29,7 @@ export function Card({card}: CardProps){
         ))} 
         </div> 
         <div className="cardSummary">
-        {reactStringReplace(card.summary.slice(0,72).trim()+"...", regex , (value, i) => (
+        {reactStringReplace(card.summary.slice(0,65).trim()+"...", regex , (value, i) => (
           <span key={i} style={{ backgroundColor: 'yellow' }}>{value}</span>
         ))}     
         </div>

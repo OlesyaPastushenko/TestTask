@@ -50,6 +50,8 @@ margin-left: 25px;
 .cardTitle {
 width: 350px;
 min-height: 90px;
+max-height: 90px;
+overflow-y: hidden;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
