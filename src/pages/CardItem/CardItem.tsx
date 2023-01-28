@@ -25,13 +25,13 @@ export function CardItem() {
 
     useEffect(()=>{
         fetchArticle(itemId)
-    },[])
+    })
 
     return (
         <div className="cardItemMain">
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
-            <img className="cardItemImg" src={article?.imageUrl}/>
+            <img alt = "" className="cardItemImg" src={article?.imageUrl}/>
             <div className="cardItemContainer">
             <div className="cardItemTitle">{article?.title}</div>
             <div className="cardItemSum">{article?.summary}</div>
