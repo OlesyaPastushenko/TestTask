@@ -1,7 +1,7 @@
 import "./style.scss"
 import { ICard } from "../../models"
 import { Link } from "react-router-dom"
-import {useState, useContext } from "react"
+import { useContext } from "react"
 import { InputContext } from "../../context/InputContext"
 import reactStringReplace from 'react-string-replace';
 
