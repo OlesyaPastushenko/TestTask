@@ -30,6 +30,10 @@ margin-top: 50px;
 }
 .description {
     margin-top: 15px;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
    p{
     margin-top: 15px;
    } 
