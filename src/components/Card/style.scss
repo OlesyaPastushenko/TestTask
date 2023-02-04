@@ -1,5 +1,5 @@
 .cardContainer {
-width: 400px;
+max-width: 400px;
 height: 530px;
 display: flex;
 flex-direction: column;
@@ -27,7 +27,7 @@ line-height: 150%;
 color: #363636;
 opacity: 0.6;
 display: inline-block;
-width: 300px;
+max-width: 300px;
 margin-left: 10px;
 }
 .cardLink {
@@ -48,7 +48,7 @@ margin-left: 25px;
     margin-top: 30px;
 }
 .cardTitle {
-width: 350px;
+max-width: 350px;
 min-height: 90px;
 max-height: 90px;
 overflow-y: hidden;
@@ -62,7 +62,7 @@ margin-left: 25px;
 margin-top: 25px;
 }
 .cardSummary {
-width: 350px;
+max-width: 350px;
 margin-left: 25px;
 margin-top: 25px;
 font-family: 'Montserrat';
@@ -81,4 +81,31 @@ line-height: 150%;
 color: #363636;
 margin-top: 25px;
 margin-left: 25px;
+}
+@media only screen and (max-width: 650px) {
+    .cardContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .cardTitle {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .cardSummary {
+        margin-left: 10px;
+        margin-right: 10px; 
+    }
+    .cardDateImg {
+        margin-left: 10px;
+    }
+    .cardTitle {
+        min-height: 30px;
+        width: 94%;
+    }
+    .cardReadMore{
+        margin-bottom: 20px;
+    }
 }

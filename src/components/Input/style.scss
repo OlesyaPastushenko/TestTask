@@ -1,5 +1,5 @@
 .inputContainer {
-width: 600px;
+max-width: 600px;
 height: 50px;
 background: #FFFFFF;
 border: 1px solid #EAEAEA;
@@ -40,4 +40,7 @@ justify-content: center;
     font-size: 16px;
     outline: none;
     border: none;
+}
+@media only screen and (max-width: 650px) {
+   
 }
