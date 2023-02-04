@@ -8,15 +8,12 @@ import {Link} from "react-router-dom"
 export function CardItem() {
     const {itemId} = useParams<{itemId?: string | undefined}>()
     const [article, setArticle] = useState<IArticle>()
-    const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
     
  async function fetchArticle (id: string | undefined) {
        try {
-           setLoading(true)
            const response =  await axios.get<IArticle>(`https://api.spaceflightnewsapi.net/v3/articles/${id}`)
            setArticle(response.data)
-           setLoading(false)
        } catch (e: unknown) {
            const error = e as AxiosError
            setError(error.message)
