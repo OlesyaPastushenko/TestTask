@@ -28,4 +28,23 @@ margin-top: 50px;
     margin-top: 50px;
     flex-wrap: wrap;
 }
-
+.description {
+    margin-top: 15px;
+   p{
+    margin-top: 15px;
+   } 
+}
+.showBtn {
+    margin-top: 20px;
+     background-color: rgb(106, 105, 105);
+     color: white;
+     border-radius: 5px;
+     padding: 5px;
+     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+     text-align: center;
+     width: 200px;
+     transition: 0.3s;
+}
+.showBtn:hover {
+    scale: 1.03;
+}
